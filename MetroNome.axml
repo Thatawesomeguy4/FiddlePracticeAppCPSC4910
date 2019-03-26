@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="50px"
+    android:minHeight="50px"
+    
+    
+    <Button
+        android:id="@+id/bpmButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BPM: " 
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:background="@android:color/holo_blue_dark"
+    />
+    
+    <Button
+        android:id="@+id/bpmButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bpmButton2" 
+        android:layout_below="@id/bpmButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dip"
+        android:background="@android:color/holo_blue_dark"
+    />
+	<Button
+		android:id="@+id/startButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/startButton"
+		android:layout_below="@id/bpmButton2"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="35dip"
+		android:background="@android:color/holo_blue_dark"
+    />
+
+	<Button
+		android:id="@+id/stopButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/stopButton"
+		android:layout_below="@id/startButton"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="35dip"
+		android:background="@android:color/holo_blue_dark"
+    />
+
+	<Button
+        android:id="@+id/bpmInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bpmInButton" 
+		android:layout_below="@id/stopButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:background="@android:color/holo_blue_dark"
+    />
+
+	<Button
+        android:id="@+id/bpmSubButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bpmSubButton" 
+		android:layout_below="@id/bpmInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:background="@android:color/holo_blue_dark"
+    />
+
+
+</RelativeLayout>

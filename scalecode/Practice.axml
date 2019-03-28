@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth="50px"
+	android:minHeight="50px"
+	android:background="@drawable/wood_background">
+	<TextView
+		android:text="Scale Types"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/textView2" />
+	<RadioGroup
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/textView2"
+		android:id="@+id/radioGroup1">
+		<RadioButton
+			android:text="Major Scale"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton1" />
+		<RadioButton
+			android:text="Minor Scale"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton2" />
+		<RadioButton
+			android:text="Chromatic Scale"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton3" />
+		<RadioButton
+			android:text="Pentatonic Major Scale"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton4" />
+		<RadioButton
+			android:text="Pentatonic Minor Scale"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton12" />
+	</RadioGroup>
+	<Button
+		android:id="@+id/myButton1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Choose This Scale Type"
+		android:textAlignment="center"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/radioGroup1"
+		android:background="@android:color/holo_blue_dark"
+		android:onClick="myButton1_Click"
+        
+    />
+	<EditText
+		android:id="@+id/resultBox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		android:layout_below="@id/radioGroup1"
+		<requestFocus/>
+	</EditText>
+	<TextView
+		android:text="Scale Keys"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/myButton1"
+		android:id="@+id/textView3" />
+	<RadioGroup
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/radioGroup2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/myButton1"
+		android:layout_marginTop="32dp"
+		android:layout_marginLeft="128dp"
+		android:orientation="vertical">
+		<RadioButton
+			android:text="A"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton5" />
+		<RadioButton
+			android:text="B"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton6" />
+		<RadioButton
+			android:text="C"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton7" />
+		<RadioButton
+			android:text="D"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton8" />
+		<RadioButton
+			android:text="E"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton9" />
+		<RadioButton
+			android:text="F"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton10" />
+		<RadioButton
+			android:text="G"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton11" />
+	</RadioGroup>
+	<RadioGroup
+		android:minWidth="50px"
+		android:minHeight="25px"
+		android:id="@+id/radioGroup3"
+		android:layout_width="68.5dp"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/myButton1"
+		android:layout_below="@id/myButton1"
+		android:layout_marginTop="32dp"
+		android:layout_marginRight="512dp"
+		android:orientation="vertical">
+		<RadioButton
+			android:text="Ab"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton13" />
+		<RadioButton
+			android:text="Bb"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton14" />
+		<RadioButton
+			android:text="C#"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton15" />
+		<RadioButton
+			android:text="Eb"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton16" />
+		<RadioButton
+			android:text="F#"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton17" />
+		<RadioButton
+			android:text="G#"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton18" />
+	</RadioGroup>
+	<Button
+		android:id="@+id/myButton2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Choose This Scale and Key"
+		android:textAlignment="center"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="16dp"
+		android:background="@android:color/holo_blue_dark"
+		android:layout_below="@id/radioGroup2"
+		android:onClick="myButton2_Click"
+        
+    />
+	<Button
+		android:id="@+id/myButton3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="back"
+		android:textAlignment="center"
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="32dp"
+		android:layout_toRightOf="@id/textView2"
+		android:layout_alignTop="@id/textView2"
+		android:background="@android:color/holo_blue_dark"
+		android:layout_below="@id/myButton2"
+		android:onClick="myButton3_Click"
+        
+    />
+
+
+
+    </RelativeLayout>

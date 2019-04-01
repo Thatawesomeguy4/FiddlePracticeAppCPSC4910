@@ -182,33 +182,6 @@ namespace FidLinn
 
 
 
-        public class ScalesTest
-        {
-
-
-
-            public static void Main()
-            {
-                Scales example = new Scales("Low A", 5);
-                //when you make a new Scales, use name of first note, not scale name
-                //for example ("Low C",1) means major scale that starts on low c
-                //signify scale type with int
-                // example.playScale(example.buildScale());
-                //Scales chromatic = new Scales("Low/Open D", 3);
-                //chromatic.buildScale();
-
-
-
-#if DEBUG
-
-                //Console.WriteLine("done");
-               // Console.ReadLine();
-
-#endif
-            }
-        }
-
-
         public class Scales
         {
 

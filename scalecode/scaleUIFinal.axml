@@ -51,9 +51,9 @@
 	
 	<EditText
 		android:id="@+id/resultBox"
-		android:layout_width="wrap_content"
+		android:layout_width="350dip"
 		android:layout_height="wrap_content"
-		android:text="Note Appears Here"
+		android:text="Note Appears Here "
 		android:layout_centerHorizontal="true"
 
 		android:layout_below="@id/radioGroup1" />
@@ -117,10 +117,11 @@
 		android:id="@+id/radioGroup3"
 		android:layout_width="68.5dp"
 		android:layout_height="wrap_content"
-		android:layout_toRightOf="@id/resultBox"
+		android:layout_toRightOf="@id/textView3"
 		android:layout_below="@id/resultBox"
 		android:layout_marginTop="32dp"
-		android:layout_marginRight="512dp"
+		android:layout_marginRight="1000dp"
+		
 		android:orientation="vertical">
 		<RadioButton
 			android:text="Ab"

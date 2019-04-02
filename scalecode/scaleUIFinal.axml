@@ -52,7 +52,7 @@
 	<EditText
 		android:id="@+id/resultBox"
 		android:layout_width="350dip"
-		android:layout_height="wrap_content"
+		android:layout_height="75dip"
 		android:text="Note Appears Here "
 		android:layout_centerHorizontal="true"
 
@@ -161,7 +161,6 @@
 		android:text="Choose This Scale and Key"
 		android:textAlignment="center"
 		android:layout_centerHorizontal="true"
-		android:layout_marginTop="16dp"
 		android:background="@android:color/holo_blue_dark"
 		android:layout_below="@id/radioGroup2"
 		android:onClick="myButton2_Click"
